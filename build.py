@@ -155,7 +155,7 @@ kb = f"""
 <h2>Who it's for</h2>
 <ul><li>Solo founders and freelancers with a B2B service (consulting, design, software, research, coaching, ops).</li><li>You already use ChatGPT/Claude and want to steer it, not chat with it.</li><li>You want a weekly rhythm, not another productivity course.</li></ul>
 <h2>FAQ</h2><dl class="faq">
-<dt>What language is the pack in?</dt><dd>English. All 38 prompts, 3 checklists and the PDF are in English. This pack was originally written in German (as Run Your Week Solo) — if you prefer the German edition, email {CONTACT} after purchase and you get it at no extra cost.</dd>
+<dt>What language is the pack in?</dt><dd>English. All 38 prompts, 3 checklists and the PDF are in English. This pack was originally written in German (as Klarbetrieb) — if you prefer the German edition, email {CONTACT} after purchase and you get it at no extra cost.</dd>
 <dt>Do I need ChatGPT Plus?</dt><dd>No. Any current text model works; better models hold the output formats better.</dd>
 <dt>How is it delivered?</dt><dd>ZIP (Markdown + PDF) by email after Stripe checkout, usually within 2 hours (CET daytime).</dd>
 <dt>Refunds?</dt><dd>Digital files: generally none after delivery. Broken or missing files get fixed — email {CONTACT}.</dd></dl>
