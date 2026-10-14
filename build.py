@@ -32,7 +32,7 @@ def page(path, title, desc, body, canon):
 <meta property="og:description" content="{html.escape(desc)}"><meta property="og:url" content="{canon}"><meta property="og:image" content="{BASE}/og.png">
 <meta name="twitter:card" content="summary_large_image"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/style.css">
 </head><body>
-<header><div class="wrap"><a class="brand" href="/">DIGITAL AYNS · Packs</a><nav><a href="/sichtwerk/">Sichtwerk</a><a href="/klarangebot/">Klarangebot</a><a href="/klarbetrieb/">Klarbetrieb</a></nav></div></header>
+<header><div class="wrap"><a class="brand" href="/">DIGITAL AYNS · Packs</a><nav><a href="/sichtwerk/">Sichtwerk</a><a href="/klarangebot/">Klarangebot</a><a href="/klarbetrieb/">Run Your Week Solo</a></nav></div></header>
 <main class="wrap">{body}</main>
 <footer><div class="wrap">Prompt &amp; workflow packs by Info DIGITAL AYNS · DIGITAL AYNS LLC · <a href="/imprint/">Imprint &amp; privacy</a> · Contact: {CONTACT}<br>Payments via Stripe. Files are delivered by email after payment (usually within 2 hours, CET daytime).</div></footer>
 </body></html>
@@ -48,15 +48,15 @@ home = f"""
 <div class="cards">
 <div class="card"><h3>Sichtwerk</h3><p>LinkedIn visibility pack for solo experts: positioning, profile, hooks &amp; posts, proof.</p><p><span class="price">€24 one-time</span> · <span class="tag">English</span><span class="tag">24 prompts</span></p><a href="/sichtwerk/">Details →</a></div>
 <div class="card"><h3>Klarangebot</h3><p>Proposal pack: discovery, scope &amp; pricing, proposal copy, negotiation and follow-ups.</p><p><span class="price">€19 one-time</span> · <span class="tag">English</span><span class="tag">24 prompts</span></p><a href="/klarangebot/">Details →</a></div>
-<div class="card"><h3>Klarbetrieb</h3><p>Week OS for solo founders: weekly rhythm, content, offers, outreach, decisions.</p><p><span class="price">€29 one-time</span> · <span class="tag">English</span><span class="tag">38 prompts</span></p><a href="/klarbetrieb/">Details →</a></div>
+<div class="card"><h3>Run Your Week Solo</h3><p>Week OS for solo founders: weekly rhythm, content, offers, outreach, decisions.</p><p><span class="price">€29 one-time</span> · <span class="tag">English</span><span class="tag">38 prompts</span></p><a href="/klarbetrieb/">Details →</a></div>
 </div>
 <h2>Which one first?</h2>
-<p><strong>Sichtwerk</strong> = be seen. <strong>Klarangebot</strong> = close. <strong>Klarbetrieb</strong> = keep the business running. None is a prerequisite for another.</p>
+<p><strong>Sichtwerk</strong> = be seen. <strong>Klarangebot</strong> = close. <strong>Run Your Week Solo</strong> = keep the business running. None is a prerequisite for another.</p>
 <h2>How the packs work</h2>
 <ul><li>Copy a prompt, replace the <code>[placeholders]</code> (2–5 minutes).</li><li>Paste into your model. Keep the output format — that is the point.</li><li>Cut hard, tick the checklist, ship.</li></ul>
 <p>Every pack: Markdown files + PDF, delivered as a ZIP. Use for yourself and your own company. No resale or white-label.</p>
 """
-page("index.html", "DIGITAL AYNS Packs — prompt & workflow packs for solo experts", "Copy-paste prompt and workflow packs for solo experts and solo founders: Sichtwerk (LinkedIn visibility), Klarangebot (proposals), Klarbetrieb (week OS). One-time price.", home, BASE + "/")
+page("index.html", "DIGITAL AYNS Packs — prompt & workflow packs for solo experts", "Copy-paste prompt and workflow packs for solo experts and solo founders: Sichtwerk (LinkedIn visibility), Klarangebot (proposals), Run Your Week Solo (week OS). One-time price.", home, BASE + "/")
 
 # ---------- SICHTWERK ----------
 sw_sample = """You are a hook editor for LinkedIn (English, solo experts).
@@ -138,10 +138,10 @@ CALENDAR:
 RISK:
 FIRST STEP TODAY (25 minutes, concrete):"""
 kb = f"""
-<p class="meta">Klarbetrieb · v0.1 · English</p>
+<p class="meta">Run Your Week Solo · v0.1 · English</p>
 <h1>Week OS for solo founders — run your week instead of improvising it.</h1>
-<p class="lead">You are the company. No ops team, no assistant. Klarbetrieb gives you the operating rhythm most solo founders improvise: 5 modules, 38 copy-paste prompts with fixed output formats, plus 3 checklists.</p>
-<a class="btn" href="{STRIPE['klarbetrieb']}">Buy Klarbetrieb — €29 one-time</a><a class="btn alt" href="#sample">See a sample prompt</a>
+<p class="lead">You are the company. No ops team, no assistant. Run Your Week Solo gives you the operating rhythm most solo founders improvise: 5 modules, 38 copy-paste prompts with fixed output formats, plus 3 checklists.</p>
+<a class="btn" href="{STRIPE['klarbetrieb']}">Buy Run Your Week Solo — €29 one-time</a><a class="btn alt" href="#sample">See a sample prompt</a>
 <p class="meta">Markdown + 27-page PDF · ZIP by email after payment · English edition (German edition available on request at no extra cost)</p>
 <h2>What's inside</h2>
 <h3>01 — Week OS</h3><p>Monday start, midweek cut, Friday close. Pipeline, capacity, one-sentence weekly goal.</p>
@@ -155,13 +155,13 @@ kb = f"""
 <h2>Who it's for</h2>
 <ul><li>Solo founders and freelancers with a B2B service (consulting, design, software, research, coaching, ops).</li><li>You already use ChatGPT/Claude and want to steer it, not chat with it.</li><li>You want a weekly rhythm, not another productivity course.</li></ul>
 <h2>FAQ</h2><dl class="faq">
-<dt>What language is the pack in?</dt><dd>English. All 38 prompts, 3 checklists and the PDF are in English. Klarbetrieb was originally written in German — if you prefer the German edition, email {CONTACT} after purchase and you get it at no extra cost.</dd>
+<dt>What language is the pack in?</dt><dd>English. All 38 prompts, 3 checklists and the PDF are in English. This pack was originally written in German (as Run Your Week Solo) — if you prefer the German edition, email {CONTACT} after purchase and you get it at no extra cost.</dd>
 <dt>Do I need ChatGPT Plus?</dt><dd>No. Any current text model works; better models hold the output formats better.</dd>
 <dt>How is it delivered?</dt><dd>ZIP (Markdown + PDF) by email after Stripe checkout, usually within 2 hours (CET daytime).</dd>
 <dt>Refunds?</dt><dd>Digital files: generally none after delivery. Broken or missing files get fixed — email {CONTACT}.</dd></dl>
-<a class="btn" href="{STRIPE['klarbetrieb']}">Buy Klarbetrieb — €29 one-time</a>
+<a class="btn" href="{STRIPE['klarbetrieb']}">Buy Run Your Week Solo — €29 one-time</a>
 """
-page("klarbetrieb/index.html", "Klarbetrieb — Week OS for Solo Founders (€29)", "Operating pack for solo founders: week OS, content, offers, outreach and decisions. 38 copy-paste prompts + 3 checklists, in English. €29 one-time.", kb, BASE + "/klarbetrieb/")
+page("klarbetrieb/index.html", "Run Your Week Solo — Week OS for Solo Founders (€29)", "Operating pack for solo founders: week OS, content, offers, outreach and decisions. 38 copy-paste prompts + 3 checklists, in English. €29 one-time.", kb, BASE + "/klarbetrieb/")
 
 # ---------- KLARANGEBOT ----------
 ka = f"""
@@ -190,7 +190,7 @@ page("klarangebot/index.html", "Klarangebot — Proposal Pack for Solo Founders 
 # ---------- IMPRINT ----------
 imp = f"""
 <h1>Imprint &amp; privacy</h1>
-<p>These packs (Sichtwerk, Klarangebot, Klarbetrieb) are published by:</p>
+<p>These packs (Sichtwerk, Klarangebot, Run Your Week Solo) are published by:</p>
 <p><strong>DIGITAL AYNS LLC</strong><br>1603 Capitol Ave Suite 413G-1351<br>Cheyenne, Wyoming 82001<br>United States<br>Contact: {CONTACT}</p>
 <h2>Privacy</h2>
 <p>This site is a static page hosted on GitHub Pages. It sets no cookies and uses no analytics or tracking scripts. GitHub may process technical access data (e.g. IP address) to deliver the site — see GitHub's privacy statement.</p>
@@ -206,5 +206,5 @@ pathlib.Path("favicon.svg").write_text('<svg xmlns="http://www.w3.org/2000/svg" 
 pathlib.Path("robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n")
 urls = ["/", "/sichtwerk/", "/klarangebot/", "/klarbetrieb/", "/imprint/"]
 pathlib.Path("sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(f"<url><loc>{BASE}{u}</loc><lastmod>2026-10-07</lastmod></url>\n" for u in urls) + "</urlset>\n")
-pathlib.Path("README.md").write_text("# DIGITAL AYNS Packs\n\nStatic product site (GitHub Pages) for Sichtwerk, Klarangebot, Klarbetrieb. Generated by build.py. Publisher: DIGITAL AYNS LLC.\n")
+pathlib.Path("README.md").write_text("# DIGITAL AYNS Packs\n\nStatic product site (GitHub Pages) for Sichtwerk, Klarangebot, Run Your Week Solo. Generated by build.py. Publisher: DIGITAL AYNS LLC.\n")
 print("ok")
